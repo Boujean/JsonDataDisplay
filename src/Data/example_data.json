@@ -1,0 +1,119 @@
+{
+	"Years": [2019],
+	"Years_Features": [{
+		"Months": [8, 9, 10, 11],
+		"Months_Features": [{
+			"Correct": 4779,
+			"Correct_Duration": 16,
+			"Short": 844,
+			"Violators": 0,
+			"Violators_Duration": 0,
+			"Weeks": [34, 35],
+			"Weeks_Features": [{
+				"Correct": 222,
+				"Correct_Duration": 18,
+				"Violators": 0,
+				"Violators_Duration": 0
+			}, {
+				"Correct": 4557,
+				"Correct_Duration": 16,
+				"Violators": 0,
+				"Violators_Duration": 0
+			}]
+		}, {
+			"Correct": 18367,
+			"Correct_Duration": 15,
+			"Short": 3319,
+			"Violators": 101,
+			"Violators_Duration": 189,
+			"Weeks": [35, 36, 37, 38, 39, 40],
+			"Weeks_Features": [{
+				"Correct": 26,
+				"Correct_Duration": 4,
+				"Violators": 0,
+				"Violators_Duration": 0
+			}, {
+				"Correct": 1264,
+				"Correct_Duration": 16,
+				"Violators": 14,
+				"Violators_Duration": 534
+			}, {
+				"Correct": 4306,
+				"Correct_Duration": 14,
+				"Violators": 21,
+				"Violators_Duration": 238
+			}, {
+				"Correct": 5110,
+				"Correct_Duration": 16,
+				"Violators": 25,
+				"Violators_Duration": 266
+			}, {
+				"Correct": 6384,
+				"Correct_Duration": 16,
+				"Violators": 36,
+				"Violators_Duration": 175
+			}, {
+				"Correct": 1277,
+				"Correct_Duration": 11,
+				"Violators": 5,
+				"Violators_Duration": 189
+			}]
+		}, {
+			"Correct": 31244,
+			"Correct_Duration": 15,
+			"Short": 5620,
+			"Violators": 157,
+			"Violators_Duration": 209,
+			"Weeks": [40, 41, 42, 43, 44],
+			"Weeks_Features": [{
+				"Correct": 4180,
+				"Correct_Duration": 14,
+				"Violators": 15,
+				"Violators_Duration": 189
+			}, {
+				"Correct": 7368,
+				"Correct_Duration": 14,
+				"Violators": 33,
+				"Violators_Duration": 185
+			}, {
+				"Correct": 6144,
+				"Correct_Duration": 14,
+				"Violators": 41,
+				"Violators_Duration": 177
+			}, {
+				"Correct": 7504,
+				"Correct_Duration": 16,
+				"Violators": 45,
+				"Violators_Duration": 148
+			}, {
+				"Correct": 6048,
+				"Correct_Duration": 16,
+				"Violators": 23,
+				"Violators_Duration": 209
+			}]
+		}, {
+			"Correct": 16822,
+			"Correct_Duration": 14,
+			"Short": 3158,
+			"Violators": 138,
+			"Violators_Duration": 224,
+			"Weeks": [44, 45, 46],
+			"Weeks_Features": [{
+				"Correct": 1203,
+				"Correct_Duration": 13,
+				"Violators": 4,
+				"Violators_Duration": 209
+			}, {
+				"Correct": 8079,
+				"Correct_Duration": 15,
+				"Violators": 74,
+				"Violators_Duration": 218
+			}, {
+				"Correct": 7540,
+				"Correct_Duration": 13,
+				"Violators": 60,
+				"Violators_Duration": 224
+			}]
+		}]
+	}]
+}
