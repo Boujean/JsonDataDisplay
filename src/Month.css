@@ -1,0 +1,48 @@
+
+.MonthData{
+  display: block;
+  background-color: white;
+  border: 0.4vmin solid #74F177;
+  width:90%;
+  height:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vmin;
+}
+
+.WeekData{
+  display: block;
+  background-color: white;
+  border: 0.4vmin solid #74F177;
+  width:90%;
+  height:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vmin;
+}
+
+.WeeklyData_month{
+  background-color: white;
+  border: 0.4vmin solid #74F177;
+  max-width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vmin;
+}
+
+
+.Month{
+  border-bottom: 0.2vmin solid black;
+}
+
+.Months{
+  margin:1vmin;
+  border-top: 0.2vmin solid black;
+  border-left: 0.2vmin solid black;
+  border-right: 0.2vmin solid black;
+}
+
+.MonthsContainer{
+  border:0.2vmin solid #74F177;
+  margin:1vmin;
+}
