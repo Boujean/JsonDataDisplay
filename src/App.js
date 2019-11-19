@@ -9,7 +9,7 @@ class App extends Component {
       <div className='App'>
         <header className='App-header'> Your Parking Lot Data </header>
         <DataList />
-        <DataList_Weekly />
+        <DataListWeekly />
       </div>
     )
   }
