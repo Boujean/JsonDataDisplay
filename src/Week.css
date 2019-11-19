@@ -1,0 +1,28 @@
+
+.Data{
+  border-left:1px solid black;
+  border-right:1px solid black;
+}
+
+.table_desc{
+  border-bottom: 1px solid black;
+}
+
+.table_data{
+  border-bottom: 1px solid black ;
+}
+
+.WeekofMonth{
+  border-right:0.2vw solid black;
+}
+
+.WeeksContainer{
+  margin: 1vw;
+  border: 0.5vw solid black;
+  display: flex;
+}
+
+.MonthsContainer{
+  border:0.2vw solid black;
+  margin:1vw;
+}

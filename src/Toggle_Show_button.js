@@ -1,7 +1,8 @@
+
 import React, { Component } from 'react'
 import './App.css'
 
-export class ToggleDiv extends React.Component {
+export class ToggleDiv extends Component {
   constructor (props) {
     super(props)
     this.state = {

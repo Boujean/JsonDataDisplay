@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 
 export function MonthNumberToName (MonthNumber) {
   var MonthName = ''
