@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(3px + 5vmin);
   color: white;
 }
 
@@ -30,6 +30,16 @@
   margin-left: auto;
   margin-right: auto;
   cursor:pointer;
+  margin-bottom: 1vmin;
 }
 
+.Titlesh3{
+  font-size:3vmin;
+}
+.Titlesh2{
+  font-size:3vmax;
+}
 
+.map_result{
+  font-size:2.5vmin;
+}

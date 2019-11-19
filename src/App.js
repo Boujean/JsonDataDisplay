@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import DataList from './List/DataList'
-import DataList_Weekly from './List/DataList_weekly'
+import DataList_Weekly from './List/DataListWeekly'
 
 class App extends Component {
   render () {

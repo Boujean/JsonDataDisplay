@@ -10,14 +10,14 @@ class DataList_Weekly extends Component {
   render () {
     return (
       <div>
-        <h3>Weekly Dashboard</h3>
+        <h3 className='Titlesh3'>Weekly Dashboard</h3>
         <ToggleDivW>
           {Disp_data.Years_Features.map(function (months, index) {
             return <div className='WeeklyData_month'>
               <div className='WeeksContainer'>
                 {months.Months_Features.map(function (month_details, i) {
                   return <div className='WeekofMonth'>
-                    <h3>{MonthName((months.Months[0] + Number(i)))}</h3>
+                    <h3 className='Titlesh3'>{MonthName((months.Months[0] + Number(i)))}</h3>
                     <div className='WeeklyData'>
                       {month_details.Weeks_Features.map(function (weeks_details, l) {
                         return <div className='Data'>
