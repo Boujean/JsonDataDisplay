@@ -11,7 +11,7 @@ class DataListWeekly extends Component {
   render () {
     return (
       <div>
-        <h2 className='Titlesh2'>Weekly Dashboard</h2>
+        <h2 className='Titlesh2' id='WeekDashboard'>Weekly Dashboard</h2>
         <ToggleDivW>
           {Disp_data.Years_Features.map(function (months, index) {
             return <div className='WeeklyData_month'>

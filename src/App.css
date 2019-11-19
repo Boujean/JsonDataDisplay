@@ -51,3 +51,42 @@
 .map_result{
   font-size:0.8vmax;
 }
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  left: 0;
+  max-height:50%;
+  width:15%; 
+}
+
+
+.navbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:1vmax;
+  width:100%;
+  border-top: 0.1vmin solid white;
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#Contact{
+  background: #74F177;
+  width:100%;
+  height:5vmin;
+  font-size:3vmin;
+  text-align: center;
+  bottom: 0;
+  color:white;
+}
