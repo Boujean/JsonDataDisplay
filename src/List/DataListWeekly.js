@@ -43,4 +43,4 @@ class DataListWeekly extends Component {
     )
   }
 }
-export default DataList_Weekly
+export default DataListWeekly
