@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Disp_data from '../Data/example_data.json'
 import MonthName from './MonthNumberToName.js'
 import { ToggleDivM, ToggleDivMD, ToggleDivW } from '../Toggle_Show_button.js'
+import { AllDataByMonth } from './GetArrayDataFromObject.js'
 import '../App.css'
 import '../Month.css'
 
@@ -17,7 +18,7 @@ class DataList extends Component {
               return <div className='Months'>
                 {months.Months_Features.map(function (month_details, i) {
                   return <div className='Month'>
-                    <p className='Titlesh2'>{MonthName((months.Months[0] + Number(i)))}</p>
+                    <p className='Titlesh2'>{MonthName((months.Months[i]))}</p>
                     <div className='MonthDisp'>
                       <ToggleDivMD>
                         <div className='MonthData'>

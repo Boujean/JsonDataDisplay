@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Disp_data from '../Data/example_data.json'
 import MonthName from '../List/MonthNumberToName.js'
-import { CorrectByMonth, CorrectDurationByMonth, ViolatorsByMonth, ViolatorsDurationByMonth, ShortByMonth } from '../List/GetArrayPairMonthNameByProperty.js'
+import { AllDataByMonth } from '../List/GetArrayDataFromObject.js'
 import { ToggleDivM, ToggleDivCC, ToggleDivCCD, ToggleDivCS, ToggleDivCV, ToggleDivCVD } from '../Toggle_Show_button.js'
 import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
 import '../App.css'
@@ -21,7 +21,7 @@ class DataCharts extends Component {
                   <ToggleDivCC>
                     <div className='MonthData'>
                       <ResponsiveContainer height={300} width='80%'>
-                        <BarChart data={CorrectByMonth(months.Months, months.Months_Features)} margin-right='10px'>
+                        <BarChart data={AllDataByMonth(months.Months, months.Months_Features)} margin-right='10px'>
                           <CartesianGrid stroke='#ccc' />
                           <XAxis dataKey='name' />
                           <YAxis />
@@ -34,7 +34,7 @@ class DataCharts extends Component {
                   <ToggleDivCCD>
                     <div className='MonthData'>
                       <ResponsiveContainer height={300} width='80%'>
-                        <BarChart data={CorrectDurationByMonth(months.Months, months.Months_Features)} margin-right='10px'>
+                        <BarChart data={AllDataByMonth(months.Months, months.Months_Features)} margin-right='10px'>
                           <CartesianGrid stroke='#ccc' />
                           <XAxis dataKey='name' />
                           <YAxis />
@@ -47,7 +47,7 @@ class DataCharts extends Component {
                   <ToggleDivCV>
                     <div className='MonthData'>
                       <ResponsiveContainer height={300} width='80%'>
-                        <BarChart data={ViolatorsByMonth(months.Months, months.Months_Features)}>
+                        <BarChart data={AllDataByMonth(months.Months, months.Months_Features)}>
                           <CartesianGrid stroke='#ccc' />
                           <XAxis dataKey='name' />
                           <YAxis />
@@ -60,7 +60,7 @@ class DataCharts extends Component {
                   <ToggleDivCVD>
                     <div className='MonthData'>
                       <ResponsiveContainer height={300} width='80%'>
-                        <BarChart data={ViolatorsDurationByMonth(months.Months, months.Months_Features)}>
+                        <BarChart data={AllDataByMonth(months.Months, months.Months_Features)}>
                           <CartesianGrid stroke='#ccc' />
                           <XAxis dataKey='name' />
                           <YAxis />
@@ -73,7 +73,7 @@ class DataCharts extends Component {
                   <ToggleDivCS>
                     <div className='MonthData'>
                       <ResponsiveContainer height={300} width='80%'>
-                        <BarChart data={ShortByMonth(months.Months, months.Months_Features)}>
+                        <BarChart data={AllDataByMonth(months.Months, months.Months_Features)}>
                           <CartesianGrid stroke='#ccc' />
                           <XAxis dataKey='name' />
                           <YAxis />
