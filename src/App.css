@@ -7,8 +7,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #74F288;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +19,78 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.boxTitle{
+  display: block;
+  background-color: #74F177;
+  color: white;
+  font-size:3vmin;
+  max-width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+}
+
+.MonthData{
+  display: block;
+  background-color: white;
+  border: 2px solid #74F177;
+  width:90%;
+  height:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+}
+
+.WeekData{
+  display: block;
+  background-color: white;
+  border: 2px solid #74F177;
+  width:90%;
+  height:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+}
+
+.WeeklyData_month{
+  display: flex;
+  background-color: white;
+  border: 2px solid #74F177;
+  max-width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+.WeeklyData{
+  display: flex;
+  flex-flow:row;
+  font-size:1.5vh;
+  border-top:1vh solid black;
+}
+
+.Month{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 1px;
+}
+
+.Months{
+  margin-top:1vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.Data{
+  border-left:1px solid black;
+  border-right:1px solid black;
+}
+
+.table_desc{
+  border-bottom: 1px solid black;
+}
+
+.table_data{
+  border-bottom: 1px solid black ;
 }
