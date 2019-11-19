@@ -92,3 +92,123 @@ export class ToggleDivW extends ToggleDiv {
     )
   }
 }
+export class ToggleDivCC extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Correct Chart'
+    } else {
+      title = 'Get Correct Chart'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivCCD extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Correct Duration Chart'
+    } else {
+      title = 'Get Correct Duration Chart'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivCV extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Violators Chart'
+    } else {
+      title = 'Get Violators Chart'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivCVD extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Violators Duration Chart'
+    } else {
+      title = 'Get Violators Duration Chart'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivCS extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Short Chart'
+    } else {
+      title = 'Get Short Chart'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}

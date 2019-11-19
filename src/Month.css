@@ -4,7 +4,6 @@
   background-color: white;
   border: 0.4vmin solid #74F177;
   width:90%;
-  height:90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2vmin;
@@ -36,13 +35,21 @@
 }
 
 .Months{
-  margin:1vmin;
+  margin-top:2vmin;
+  margin-bottom:2vmin;
+  margin-left:5vmin;
+  margin-right:5vmin;
   border-top: 0.2vmin solid black;
   border-left: 0.2vmin solid black;
   border-right: 0.2vmin solid black;
 }
 
 .MonthsContainer{
-  border:0.2vmin solid #74F177;
+  border:0.4vmin solid #74F177;
   margin:1vmin;
+}
+
+.MonthsDisp{
+  display:flex;
+  flex-flow:row;
 }
