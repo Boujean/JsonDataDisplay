@@ -50,9 +50,9 @@ export class ToggleDivMD extends ToggleDiv {
     const { opened } = this.state
 
     if (opened) {
-      title = 'Hide Monthly Data'
+      title = 'Hide this month data'
     } else {
-      title = 'Get Monthly Data'
+      title = 'Get this month data'
     }
     return (
       <div className='box'>
@@ -77,6 +77,30 @@ export class ToggleDivW extends ToggleDiv {
       title = 'Hide Weekly Data'
     } else {
       title = 'Get Weekly Data'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivWM extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide weekly data for this month'
+    } else {
+      title = 'Get weekly data for this month'
     }
     return (
       <div className='box'>

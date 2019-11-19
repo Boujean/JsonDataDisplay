@@ -11,8 +11,8 @@ import '../Charts.css'
 class DataCharts extends Component {
   render () {
     return (
-      <div>
-        <h2 className='Titlesh2'>Monthly Charts</h2>
+      <div className='Chart'>
+        <h2 className='Titlesh2' id='MonthCharts'>Monthly Charts</h2>
         <ToggleDivM>
           <div className='ChartContainer'>
             {Disp_data.Years_Features.map(function (months, index) {
