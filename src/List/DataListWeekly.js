@@ -6,7 +6,7 @@ import '../App.css'
 import '../Week.css'
 import '../Month.css'
 
-class DataList_Weekly extends Component {
+class DataListWeekly extends Component {
   render () {
     return (
       <div>
@@ -43,4 +43,4 @@ class DataList_Weekly extends Component {
     )
   }
 }
-export default DataList_Weekly
+export default DataListWeekly

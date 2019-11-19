@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
 
-class ToggleDiv extends React.Component {
+import React, { Component } from 'react'
+import './App.css'
+
+export class ToggleDiv extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -15,17 +17,18 @@ class ToggleDiv extends React.Component {
       opened: !opened
     })
   }
+}
 
+export class ToggleDivM extends ToggleDiv {
   render () {
     var { title, children } = this.props
     const { opened } = this.state
 
     if (opened) {
-      title = 'Hide Monthly Data'
+      title = 'Hide Available Month'
     } else {
-      title = 'Get Monthly Data'
+      title = 'Show Available Month'
     }
-
     return (
       <div className='box'>
         <div className='boxTitle' onClick={this.toggleBox}>
@@ -41,4 +44,51 @@ class ToggleDiv extends React.Component {
   }
 }
 
-export default ToggleDiv
+export class ToggleDivMD extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Monthly Data'
+    } else {
+      title = 'Get Monthly Data'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+export class ToggleDivW extends ToggleDiv {
+  render () {
+    var { title, children } = this.props
+    const { opened } = this.state
+
+    if (opened) {
+      title = 'Hide Weekly Data'
+    } else {
+      title = 'Get Weekly Data'
+    }
+    return (
+      <div className='box'>
+        <div className='boxTitle' onClick={this.toggleBox}>
+          {title}
+        </div>
+        {opened && (
+          <div class='boxContent'>
+            {children}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
