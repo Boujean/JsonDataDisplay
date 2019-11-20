@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Disp_data from '../Data/example_data.json'
-import MonthName from '../List/MonthNumberToName.js'
 import { AllDataByMonth } from '../List/GetArrayDataFromObject.js'
 import { ToggleDivM, ToggleDivCC, ToggleDivCCD, ToggleDivCS, ToggleDivCV, ToggleDivCVD } from '../Toggle_Show_button.js'
 import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
@@ -16,7 +15,7 @@ class DataCharts extends Component {
         <ToggleDivM>
           <div className='ChartContainer'>
             {Disp_data.Years_Features.map(function (months, index) {
-              return <div className='MonthsContainer'>
+              return <div className='MonthsContainer' key='index'>
                 <div className='Charts'>
                   <ToggleDivCC>
                     <div className='MonthData'>
@@ -26,7 +25,7 @@ class DataCharts extends Component {
                           <XAxis dataKey='name' />
                           <YAxis />
                           <Tooltip />
-                          <Bar type='monotone' barSize='{50}' dataKey='Correct' fill='#74F288' />
+                          <Bar type='monotone' barSize={50} dataKey='Correct' fill='#74F288' />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -39,7 +38,7 @@ class DataCharts extends Component {
                           <XAxis dataKey='name' />
                           <YAxis />
                           <Tooltip />
-                          <Bar type='monotone' barSize='{50}' dataKey='Correct_Duration' fill='#74F288' />
+                          <Bar type='monotone' barSize={50} dataKey='Correct_Duration' fill='#74F288' />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -52,7 +51,7 @@ class DataCharts extends Component {
                           <XAxis dataKey='name' />
                           <YAxis />
                           <Tooltip />
-                          <Bar type='monotone' barSize='{50}' dataKey='Violators' fill='#74F288' />
+                          <Bar type='monotone' barSize={50} dataKey='Violators' fill='#74F288' />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -65,7 +64,7 @@ class DataCharts extends Component {
                           <XAxis dataKey='name' />
                           <YAxis />
                           <Tooltip />
-                          <Bar type='monotone' barSize='{50}' dataKey='Violators_Duration' fill='#74F288' />
+                          <Bar type='monotone' barSize={50} dataKey='Violators_Duration' fill='#74F288' />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>
@@ -78,7 +77,7 @@ class DataCharts extends Component {
                           <XAxis dataKey='name' />
                           <YAxis />
                           <Tooltip />
-                          <Bar type='monotone' barSize='{50}' dataKey='Short' fill='#74F288' />
+                          <Bar type='monotone' barSize={50} dataKey='Short' fill='#74F288' />
                         </BarChart>
                       </ResponsiveContainer>
                     </div>

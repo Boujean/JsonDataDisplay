@@ -35,7 +35,7 @@ export class ToggleDivM extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -60,7 +60,7 @@ export class ToggleDivMD extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -84,7 +84,7 @@ export class ToggleDivW extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -108,7 +108,7 @@ export class ToggleDivWM extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -132,7 +132,7 @@ export class ToggleDivCC extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -156,7 +156,7 @@ export class ToggleDivCCD extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -180,7 +180,7 @@ export class ToggleDivCV extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -204,7 +204,7 @@ export class ToggleDivCVD extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}
@@ -228,7 +228,7 @@ export class ToggleDivCS extends ToggleDiv {
           {title}
         </div>
         {opened && (
-          <div class='boxContent'>
+          <div className='boxContent'>
             {children}
           </div>
         )}

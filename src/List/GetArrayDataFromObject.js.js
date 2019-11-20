@@ -1,9 +1,7 @@
-
-import React, { Component } from 'react'
 import MonthName from './MonthNumberToName.js'
 
 export function AllDataByMonth (Months, DataToChart) {
-  var myArray = new Array()
+  var myArray = []
 
   Months.forEach(function (element, index) {
     const monthname = MonthName(Months[index])
@@ -16,7 +14,7 @@ export function AllDataByMonth (Months, DataToChart) {
       name: monthname,
       Correct: monthcorrect,
       Correct_Duration: monthcorrectduration,
-      Violators: monthcorrectduration,
+      Violators: monthviolators,
       Violators_Duration: monthviolatorsduration,
       Short: monthshort
     }
@@ -28,7 +26,7 @@ export function AllDataByMonth (Months, DataToChart) {
 }
 
 export function AllDataByWeek (Weeks, DataToChart) {
-  var myArray = new Array()
+  var myArray = []
 
   Weeks.forEach(function (element, index) {
     const weeknumber = Weeks[index]
@@ -40,7 +38,7 @@ export function AllDataByWeek (Weeks, DataToChart) {
       name: weeknumber,
       Correct: weekcorrect,
       Correct_Duration: weekcorrectduration,
-      Violators: weekcorrectduration,
+      Violators: weekviolators,
       Violators_Duration: weekviolatorsduration
     }
   })

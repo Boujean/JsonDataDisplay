@@ -8,7 +8,7 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <div class='navbar'>
+        <div className='navbar'>
           <a href='#MonthDashboard'>Monthly Dashboard</a>
           <a href='#WeekDashboard'>Weekly Dashboard</a>
           <a href='#MonthCharts'>Monthly Charts</a>
