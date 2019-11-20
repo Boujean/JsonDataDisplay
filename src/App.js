@@ -3,6 +3,7 @@ import './App.css'
 import DataList from './List/DataList'
 import DataListWeekly from './List/DataListWeekly'
 import DataCharts from './Charts/Charts.js'
+import WeeklyDataCharts from './Charts/WeeklyCharts.js'
 
 class App extends Component {
   render () {
@@ -18,6 +19,7 @@ class App extends Component {
         <DataList />
         <DataListWeekly />
         <DataCharts />
+        <WeeklyDataCharts />
         <footer id='Contact'>Contact me at jean.puigrenier@telecom-sudparis.eu</footer>
       </div>
     )

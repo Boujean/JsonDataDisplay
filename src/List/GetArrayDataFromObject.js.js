@@ -25,25 +25,38 @@ export function AllDataByMonth (Months, DataToChart) {
   )
 }
 
-export function AllDataByWeek (Weeks, DataToChart) {
-  var myArray = []
+export function AllDataByWeek (Months, DataToChart) {
+  var myMonthWeekArray = []
+  // var myAllWeeksArray = []
+  var loopcount = 0
 
-  Weeks.forEach(function (element, index) {
-    const weeknumber = Weeks[index]
-    const weekcorrect = DataToChart[index].Correct
-    const weekcorrectduration = DataToChart[index].Correct_Duration
-    const weekviolators = DataToChart[index].Violators
-    const weekviolatorsduration = DataToChart[index].Violators_Duration
-    myArray[index] = {
-      name: weeknumber,
-      Correct: weekcorrect,
-      Correct_Duration: weekcorrectduration,
-      Violators: weekviolators,
-      Violators_Duration: weekviolatorsduration
-    }
+  Months.forEach(function (element, index) {
+    const monthname = MonthName(Months[index])
+    const monthweeks = DataToChart[index].Weeks
+    monthweeks.forEach(function (item, i) {
+      const weekdata = DataToChart[index].Weeks_Features[i]
+      const weeknumber = monthweeks[i]
+      const weekcorrect = weekdata.Correct
+      const weekcorrectduration = weekdata.Correct_Duration
+      const weekviolators = weekdata.Violators
+      const weekviolatorsduration = weekdata.Violators_Duration
+      myMonthWeekArray[i + loopcount] = {
+        name: 'Week' + ' ' + weeknumber.toString(),
+        month: monthname,
+        Correct: weekcorrect,
+        Correct_Duration: weekcorrectduration,
+        Violators: weekviolators,
+        Violators_Duration: weekviolatorsduration
+      }
+    })
+    // myAllWeeksArray[index] = {
+    // myMonthWeekArray
+    // }
+    loopcount = loopcount + DataToChart[index].Weeks.length
   })
 
   return (
-    myArray
+    myMonthWeekArray
+    // myAllWeeksArray
   )
 }
